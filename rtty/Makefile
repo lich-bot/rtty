@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 Jianhui Zhao
+# Copyright (C) 2000 vecna
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -12,7 +12,7 @@ PKG_VERSION:=8.0.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL=https://github.com/zhaojh329/rtty/releases/download/v$(PKG_VERSION)
+PKG_SOURCE_URL=https://github.com/lich-bot/rtty/releases/download/v$(PKG_VERSION)
 PKG_HASH:=b9c555005b76c1ad0f5af891964375bbdf50ee22b9a9f53ddd48d2cdb4e53b49
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(BUILD_VARIANT)/$(PKG_NAME)-$(PKG_VERSION)
 CMAKE_INSTALL:=1
@@ -20,7 +20,7 @@ CMAKE_INSTALL:=1
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
 
-PKG_MAINTAINER:=Jianhui Zhao <zhaojh329@gmail.com>
+PKG_MAINTAINER:=master vecna <vecna@cult-of-vecna.org>
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/cmake.mk
@@ -30,7 +30,7 @@ define Package/rtty/Default
   SECTION:=utils
   CATEGORY:=Utilities
   SUBMENU:=Terminal
-  URL:=https://github.com/zhaojh329/rtty
+  URL:=https://github.com/lich-bot/rtty
   DEPENDS:=+libev $(2)
   VARIANT:=$(1)
   PROVIDES:=rtty
